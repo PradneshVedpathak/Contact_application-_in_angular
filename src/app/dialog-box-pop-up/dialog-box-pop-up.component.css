@@ -1,0 +1,30 @@
+#cancelBtn {
+    color: red;
+    background: rgb(244, 244, 244);
+}
+#cancelBtn:hover{
+    background: red;
+    color: white;
+}
+
+#saveBtn {
+    color: blue;
+    background: rgb(244, 244, 244);
+}
+#saveBtn:hover{
+    background: blue;
+    color: white;
+}
+
+.nameInput {
+    width: 100%;
+}
+
+mat-form-field {
+    padding-top: 1%;
+    width: 100%;
+}
+
+#action {
+    padding: 0px 25px 25px;
+}
