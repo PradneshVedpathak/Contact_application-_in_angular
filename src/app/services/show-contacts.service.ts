@@ -6,17 +6,26 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ShowContactsService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  allContacts(){
-    return this.http.get("https://average-fish-sundress.cyclic.app/allContacts"); 
+
+  //Get All Contacts 
+  allContacts() {
+    return this.http.get("https://average-fish-sundress.cyclic.app/allContacts");
   }
 
-  addContact(data : any){
+  //Post Add Contact
+  addContact(data: any) {
     return this.http.post("https://average-fish-sundress.cyclic.app/addContact", data)
   }
 
-  deleteContact(id : number){
+  //Delete Contact
+  deleteContact(id: number) {
     return this.http.delete(`https://average-fish-sundress.cyclic.app/removeContact/${id}`)
+  }
+
+  //Put Update Contact
+  updateData(updatedData: any) {
+    return this.http.put("https://average-fish-sundress.cyclic.app/updateContact", updatedData)
   }
 }
